@@ -36,7 +36,7 @@ function parseEnvFile(filePath) {
 
 const envFile = parseEnvFile(join(ROOT, '.env'))
 const envLocal = parseEnvFile(join(ROOT, '.env.local'))
-const raw = { ...envFile, ...envLocal }
+const raw = { ...envFile, ...envLocal, ...process.env }
 
 const REQUIRED = ['OPENAI_API_KEY']
 for (const key of REQUIRED) {
