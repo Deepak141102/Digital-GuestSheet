@@ -1,0 +1,170 @@
+export const FIELD_TYPES = [
+  { value: "text", label: "Text" },
+  { value: "phone", label: "Phone" },
+  { value: "email", label: "Email" },
+  { value: "number", label: "Number" },
+  { value: "date", label: "Date" },
+  { value: "select", label: "Dropdown" },
+  { value: "checkbox", label: "Checkbox" },
+  { value: "textarea", label: "Long Text" },
+];
+
+export const SAMPLE_FORM = {
+  title: "Guest Intake Form",
+  subtitle:
+    "Please fill out the information below to help us assist you better.",
+  sections: [
+    {
+      id: "s1",
+      name: "Guest Info",
+      icon: "person",
+      fields: [
+        {
+          id: "f1",
+          name: "First Name",
+          type: "text",
+          required: true,
+          placeholder: "Enter first name",
+          value: "John",
+        },
+        {
+          id: "f2",
+          name: "Last Name",
+          type: "text",
+          required: true,
+          placeholder: "Enter last name",
+          value: "Doe",
+        },
+        {
+          id: "f3",
+          name: "Phone Number",
+          type: "phone",
+          required: true,
+          placeholder: "+91 9876543210",
+          value: "+91 9876543210",
+        },
+        {
+          id: "f4",
+          name: "Email Address",
+          type: "email",
+          required: false,
+          placeholder: "john.doe@email.com",
+          value: "john.doe@email.com",
+        },
+      ],
+    },
+
+    {
+      id: "s2",
+      name: "Trade-In Vehicle",
+      icon: "car",
+      fields: [
+        {
+          id: "f5",
+          name: "Year",
+          type: "number",
+          placeholder: "e.g. 2018",
+          value: 2018,
+        },
+        {
+          id: "f6",
+          name: "Make",
+          type: "text",
+          placeholder: "e.g. Toyota",
+          value: "Toyota",
+        },
+        {
+          id: "f7",
+          name: "Model",
+          type: "text",
+          placeholder: "e.g. Corolla",
+          value: "Corolla",
+        },
+        {
+          id: "f8",
+          name: "Mileage (km)",
+          type: "number",
+          placeholder: "e.g. 45000",
+          value: 45000,
+        },
+        {
+          id: "f9",
+          name: "Condition",
+          type: "select",
+          options: ["Excellent", "Good", "Fair", "Poor"],
+          value: "Good",
+        },
+        {
+          id: "f10",
+          name: "VIN",
+          type: "text",
+          placeholder: "Vehicle Identification Number",
+          value: "1HGCM82633A123456",
+        },
+      ],
+    },
+
+    {
+      id: "s3",
+      name: "Desired Vehicle",
+      icon: "car",
+      fields: [
+        {
+          id: "f11",
+          name: "Preferred Year",
+          type: "number",
+          placeholder: "e.g. 2022",
+          value: 2022,
+        },
+        {
+          id: "f12",
+          name: "Preferred Make",
+          type: "text",
+          placeholder: "e.g. Honda",
+          value: "Honda",
+        },
+        {
+          id: "f13",
+          name: "Preferred Model",
+          type: "text",
+          placeholder: "e.g. Civic",
+          value: "Civic",
+        },
+        {
+          id: "f14",
+          name: "Color Preference",
+          type: "select",
+          options: ["Black", "White", "Blue", "Red", "Silver"],
+          value: "Black",
+        },
+        {
+          id: "f15",
+          name: "Max Budget (₹)",
+          type: "number",
+          placeholder: "e.g. 1500000",
+          value: 1500000,
+        },
+        {
+          id: "f16",
+          name: "Finance or Cash?",
+          type: "select",
+          options: ["Finance", "Cash", "Undecided"],
+          value: "Finance",
+        },
+        {
+          id: "f17",
+          name: "Test Drive Required?",
+          type: "checkbox",
+          value: true,
+        },
+        {
+          id: "f18",
+          name: "Additional Notes",
+          type: "textarea",
+          placeholder: "Any specific requirements...",
+          value: "Looking for a low-maintenance vehicle with good mileage.",
+        },
+      ],
+    },
+  ],
+};
